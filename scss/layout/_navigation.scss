@@ -1,0 +1,19 @@
+.nav {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 0 3rem;
+
+  &__button {
+    background: transparent;
+    border: none;
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
