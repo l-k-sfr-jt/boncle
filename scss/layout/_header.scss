@@ -2,4 +2,8 @@
   justify-self: center;
   align-self: center;
   width: 60rem;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  mix-blend-mode: exclusion;
 }

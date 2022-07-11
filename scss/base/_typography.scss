@@ -19,12 +19,15 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
 
   &--justify {
     text-align: justify;
   }
+}
 
+.color-white {
+  color: #FFFFFF;
 }

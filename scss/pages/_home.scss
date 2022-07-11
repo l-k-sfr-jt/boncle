@@ -1,4 +1,21 @@
 .main {
   display: grid;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100vh 70vh 65vh 100vh;
+}
+
+.homepage {
+  &__first {
+    display: grid;
+    grid-row: 2 / 4;
+    grid-template-columns: 1fr 1fr;
+
+    &__left {
+      grid-area: 1 / 1;
+    }
+
+    &__right {
+      grid-area: 2 / 2;
+      justify-self: end;
+    }
+  }
 }
