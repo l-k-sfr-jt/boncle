@@ -1,0 +1,37 @@
+.footer {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
+
+  &__docs,
+  &__newsletter {
+    @include respond(phone) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__contact {
+    @include respond(phone) {
+      justify-self: end;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+  }
+
+  &__owner {
+    padding: 3.6rem 0 3rem 0;
+    grid-column: 1 / -1;
+  }
+}

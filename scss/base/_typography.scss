@@ -17,6 +17,14 @@ body {
   letter-spacing: 2px;
 }
 
+.heading-tertiary {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+
+}
+
 .paragraph {
   font-size: $default-font-size;
   &:not(:last-child) {
