@@ -1,0 +1,15 @@
+.basket {
+  padding: 7rem 0 0 0;
+  display: grid;
+  grid-template:
+    "product info" /
+      3fr 2fr;
+
+  &__products {
+    grid-area: product;
+  }
+
+  &__info {
+    grid-area: info;
+  }
+}
