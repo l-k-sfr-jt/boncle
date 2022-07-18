@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Bonclé produkt</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <nav class="header__nav nav">
+            <button class="nav__button">
+                <img src="assets/img/hamburger.svg" alt="Menu">
+            </button>
+            <span class="nav__label">Menu</span>
+        </nav>
+        <div class="header__logo">
+            <img src="assets/img/logo-small.svg" alt="Bonclé">
+        </div>
+        <div class="header__lang">
+            <a href="#" title="Košík" class="header__basket">
+                <img src="assets/img/bakset.svg" alt="Košík">
+            </a>
+            <div class="lang-switcher">
+                <span class="lang-switcher__lang">
+                    CZ
+                </span>
+                <span class="lang-switcher__lang">
+                    ENG
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="product main">
+        <div class="product__gallery">
+            <img src="assets/img/petitPocketRed.png" class="product__image product__image--main" alt="Petit red">
+            <img src="assets/img/petitPocketRed.png" class="product__image product__image--second" alt="Petit red">
+            <img src="assets/img/petit3.png" class="product__image product__image--third" alt="Petit red">
+            <img src="assets/img/petit4.png" class="product__image product__image--fourth" alt="Petit red">
+            <img src="assets/img/petit5.png" class="product__image product__image--fifth" alt="Petit red">
+
+        </div>
+        <div class="product__info">
+            <a href="#" class="link link--small u-fw-500">ZPĚT NA KOLEKCI HOMMAGE</a>
+            <h1 class="heading-primary">KABELKA PETIT POCKET –
+                red</h1>
+            <p class="paragraph">
+                PETIT POCKET jsou kabelky praktické, stylové, barevné a jsou unikátní svou variabilitou. K PETIT POCKET
+                můžete připnout řetěz – jeden i více, záleží na každé ženě, jak moc chce na sebe upoutat pozornost.
+                Dají se nosit cross body, kolem pasu i přes rameno a také kombinovat s našimi kabelkami PETIT.
+            </p>
+            <div class="product__price u-fs-3 u-uppercase u-margin-bottom-big">
+                Cena: <span class="u-fw-500">8 712 Kč</span>
+            </div>
+            <div class="product__options u-margin-bottom-big">
+                <h2 class="heading-secondary u-fs-3 u-margin-bottom-medium">Barvy</h2>
+                <div class="product__colors">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                    <img src="assets/img/petit-color1.png" alt="White">
+                    <img src="assets/img/petit-color2.png" alt="Blue">
+                </div>
+            </div>
+            <div class="product__options u-margin-bottom-big">
+                <h2 class="heading-secondary u-fs-4 u-d-inline">ŘETĚZ</h2>
+                <p class="paragraph u-d-inline"> (automaticky k nákupu kabelky dostanete 1 řetěz v barvě černého niklu o
+                    délce, kterou si zde zvolíte):</p>
+            </div>
+
+            <button type="submit" class="btn btn--large">PŘIDAT DO KOŠÍKU</button>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__social">
+            <h3 class="heading-tertiary">SOCIÁLNÍ SÍTĚ –</h3>
+            <ul class="footer__list">
+                <li class="footer__item">Instagram</li>
+                <li class="footer__item">Facebook</li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h3 class="heading-tertiary">KONTAKTY –</h3>
+            <ul class="footer__list">
+                <li class="footer__item">Facebook</li>
+                <li class="footer__item">Fakturační údaje</li>
+            </ul>
+        </div>
+        <div class="footer__docs">
+            <h3 class="heading-tertiary">MANDATORNÍ DOKUMENTY –</h3>
+            <ul class="footer__list">
+                <li class="footer__item">Obchodní podmínky</li>
+                <li class="footer__item">Opravy a vrácení zboží</li>
+                <li class="footer__item">Podmínky a užívání</li>
+                <li class="footer__item">FAQ</li>
+            </ul>
+        </div>
+        <div class="footer__newsletter">
+            <h3 class="heading-tertiary">ODBĚR NEWSLETTERU –</h3>
+            <form action="post" class="form">
+                <input type="text" class="form__input" placeholder="Vaše jméno" aria-label="Vaše jméno">
+                <input type="email" class="form__input" placeholder="Váš e-mail" aria-label="Váš e-mail">
+                <button class="btn" type="submit">odebírat</button>
+            </form>
+        </div>
+        <div class="footer__owner">
+            <p class="paragraph u-center-text u-fw-500 u-fs-4">© BONCLÉ 2022. VŠECHNA PRÁVA VYHRAZENA.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

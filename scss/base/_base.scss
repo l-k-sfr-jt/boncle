@@ -18,33 +18,22 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [sidebar-start] minmax(8rem, 1fr) [sidebar-end  content-start] minmax(0, 118rem) [content-end side-start] minmax(8rem, 1fr) [full-end];
+  grid-template:
+   ". header ."
+    ". main ."
+    ". footer ." /
+   minmax(8rem, 1fr) minmax(0, 118rem) minmax(8rem, 1fr)
+;
 
   @include respond(phone) {
-    grid-template-columns: [sidebar-start] minmax(5rem, 1fr) [sidebar-end  content-start] minmax(0, 118rem) [content-end side-start] minmax(5rem, 1fr) [full-end];
+    grid-template:
+     ". main ."
+    ". footer ." /
+   minmax(5rem, 1fr) minmax(0, 118rem) minmax(5rem, 1fr)
 
   }
 }
 
 .main {
-  grid-column: content-start / content-end;
-}
-
-.sidebar {
-  &--left {
-    grid-column: sidebar-start / sidebar-end;
-    grid-row: 1/1;
-    position: sticky;
-    height: 100vh;
-    top: 0;
-  }
-
-  &--right {
-    grid-column: side-start / full-end;
-    grid-row: 1/1;
-  }
-}
-
-.link {
-
+  grid-area: main;
 }

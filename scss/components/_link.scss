@@ -1,0 +1,18 @@
+.link {
+  &, &:visited {
+    color: $color-primary;
+    text-decoration: none;
+
+    font-weight: $semibold;
+    letter-spacing: 0.07em;
+    font-size: 2rem;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+  }
+
+  &--underline {
+    border-bottom: 1px solid $color-primary;
+  }
+}

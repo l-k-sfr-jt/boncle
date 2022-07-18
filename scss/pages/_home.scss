@@ -1,12 +1,14 @@
-.main {
-  display: grid;
-  grid-template-rows: 100vh 70vh 65vh 100vh;
-}
-
 .homepage {
+  grid-template:
+          "." 100vh
+          "header" 70vh
+          "header" 65vh
+          "." 100vh
+          "collections" auto
+          "design-own" 80vh;
   &__first {
+    grid-area: header;
     display: grid;
-    grid-row: 2 / 4;
     grid-template-columns: 1fr 1fr;
 
     &__left {
@@ -17,5 +19,46 @@
       grid-area: 2 / 2;
       justify-self: end;
     }
+  }
+
+  &__collections {
+    display: grid;
+    grid-area: collections;
+    grid-gap: 20rem;
+
+  }
+
+  &__design-own {
+    grid-area: design-own;
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.collection {
+  display: grid;
+  grid-gap: 10rem;
+  grid-template:
+            "image description" /
+            1fr 2fr;
+  align-items: center;
+  &--swap {
+    grid-template:
+            "description image" /
+            2fr 1fr;
+  }
+  &__image {
+    grid-area: image;
+  }
+
+  &__description {
+    grid-area: description;
+  }
+
+  &__controller {
+    display: flex;
+    gap: 4rem;
   }
 }

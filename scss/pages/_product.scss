@@ -1,0 +1,32 @@
+.product {
+  grid-template:
+    "gallery info"
+    / 1fr 1fr;
+  margin: 15rem 0;
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    &--main {
+      grid-column: 1 / -1;
+    }
+  }
+  &__info {
+
+  }
+
+  &__price {
+    letter-spacing: 0.07em;
+  }
+  &__colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem
+  }
+}

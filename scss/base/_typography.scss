@@ -7,7 +7,11 @@ body {
 }
 
 .heading-primary {
+  font-size: 3rem;
+  font-size: $semibold;
   margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
 }
 
 .heading-secondary {
@@ -15,6 +19,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
+  line-height: 1.1;
 }
 
 .heading-tertiary {
@@ -30,6 +35,13 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  &--large {
+    font-size: 7rem;
+    letter-spacing: 0.07em;
+    line-height: normal;
+  }
+
 
   &--justify {
     text-align: justify;

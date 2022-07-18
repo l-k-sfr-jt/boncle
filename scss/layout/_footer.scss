@@ -1,5 +1,5 @@
 .footer {
-  grid-column: content-start / content-end;
+  grid-area: footer;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
