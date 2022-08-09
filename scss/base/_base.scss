@@ -22,7 +22,7 @@ body {
    ". header ."
     ". main ."
     ". footer ." /
-   minmax(8rem, 1fr) minmax(0, 118rem) minmax(8rem, 1fr)
+   minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr)
 ;
 
   @include respond(phone) {
@@ -36,4 +36,6 @@ body {
 
 .main {
   grid-area: main;
+  margin-bottom: 5rem;
+  min-height: 60vh;
 }

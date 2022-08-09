@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Bonclé - Checkout</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <nav class="header__nav nav">
+            <button class="nav__button">
+                <img src="assets/img/hamburger.svg" alt="Menu">
+            </button>
+            <span class="nav__label">Menu</span>
+        </nav>
+        <div class="header__logo">
+            <img src="assets/img/logo-small.svg" alt="Bonclé">
+        </div>
+        <div class="header__lang">
+            <a href="#" title="Košík" class="header__basket">
+                <img src="assets/img/bakset.svg" alt="Košík">
+            </a>
+            <div class="lang-switcher">
+                <span class="lang-switcher__lang">CZ</span>
+                <span class="lang-switcher__lang">ENG</span>
+            </div>
+        </div>
+    </header>
+    <main class="checkout main">
+        <div class="checkout__form">
+            <h2 class="heading-secondary heading-secondary--small u-margin-bottom-medium">1. Fakturační údaje</h2>
+            <form action="" class="form form--checkout">
+                <div class="form-group">
+                    <label for="name" class="u-d-none">Křestní jméno</label>
+                    <input type="text" class="form__input form__input--50" id="name" name="name"
+                           placeholder="Křestní jméno *">
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="u-d-none">Křestní jméno</label>
+                    <input type="text" class="form__input form__input--50" id="lastName" name="name"
+                           placeholder="Příjmení *">
+                </div>
+                <div class="form-group form-group--full">
+                    <label for="company" class="u-d-none">Název firmy</label>
+                    <input type="text" class="form__input" id="company" name="name" placeholder="Název firmy">
+                </div>
+                <div class="form-group form-group--full">
+                    <label for="country" class="u-d-none">Země</label>
+                    <select name="Země" class="form__input form__select-input" id="country">
+                        <option value="Země">Země</option>
+                    </select>
+                </div>
+                <div class="form-group form-group--full">
+                    <label for="address" class="u-d-none">Adresa ulice *o</label>
+                    <input type="text" class="form__input" id="address" name="name" placeholder="Adresa ulice *">
+                </div>
+                <div class="form-group form-group--full">
+                    <label for="flatNo" class="u-d-none">Číslo bytu, hotelového pokoje</label>
+                    <input type="text" class="form__input" id="flatNo" name="name"
+                           placeholder="Číslo bytu, hotelového pokoje">
+                </div>
+                <div class="form-group">
+                    <label for="city" class="u-d-none">Město</label>
+                    <input type="text" class="form__input" id="city" name="city" placeholder="Město *">
+                </div>
+                <div class="form-group">
+                    <label for="postalCode" class="u-d-none">PSČ</label>
+                    <input type="text" class="form__input" id="postalCode" name="postalCode" placeholder="PSČ *">
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="u-d-none">Telefon</label>
+                    <input type="text" class="form__input" id="phone" name="phone" placeholder="Telefon *">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="u-d-none">E-mailová adresa</label>
+                    <input type="text" class="form__input" id="email" name="email" placeholder="E-mailová adresa *">
+                </div>
+
+            </form>
+        </div>
+        <div class="checkout__products">
+            <h2 class="heading-secondary heading-secondary--small u-margin-bottom-medium">2. Vaše objednávka</h2>
+            <ul class="checkout-products__list u-margin-bottom-big">
+                <li class="checkout-products__item">
+                    <div class="checkout-product">
+                        <div class="checkout-product__image">
+                            <img src="./assets/img/ps-object.png" alt="Product">
+                        </div>
+                        <div class="checkout-product__info">
+                            <h3 class="checkout-product__header heading-tertiary ">kabelka pš.objects – MARGUERITE</h3>
+                            <div class="checkout-product__label">Kusy:&nbsp;&nbsp;<span class="u-fw-700"> 1</span></div>
+                            <div class="checkout-product__label">Cena:&nbsp;&nbsp;<span
+                                    class="u-fw-700">55 968,- Kč</span></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="box">
+                <div class="summary__item summary__item--border">
+                    <div class="u-fw-600 ">CELKOVÁ CENA</div>
+                    <div class="u-fw-500">55 968,- Kč</div>
+                </div>
+                <div class="summary__list">
+                    <div class="summary__item">
+                        <div class="summary__description">
+                            <span class="u-fw-600">DOPRAVA</span>
+                            <div class="summary__text">DHL</div>
+                            <div class="summary__text">dodání do 5-10 dní</div>
+                        </div>
+                        <div class="summary__price">
+                            Zdarma
+                        </div>
+                    </div>
+                    <div class="summary__item">
+                        <div class="summary__description">
+                            <span class="u-fw-600">ZPŮSOB PLATBY</span>
+                            <div class="summary__text">gp webpay</div>
+                            <div class="summary__text">platební kartou</div>
+                        </div>
+                        <div class="summary__price">
+                            Zdarma
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn--medium u-margin-auto">Zaplatit</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__social">
+            <h3 class="heading-tertiary">SOCIÁLNÍ SÍTĚ –</h3>
+            <ul class="footer__list">
+                <li class="footer__item">Instagram</li>
+                <li class="footer__item">Facebook</li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h3 class="heading-tertiary">KONTAKTY –</h3>
+            <ul class="footer__list">
+                <li class="footer__item">Facebook</li>
+                <li class="footer__item">Fakturační údaje</li>
+            </ul>
+        </div>
+        <div class="footer__docs">
+            <h3 class="heading-tertiary">MANDATORNÍ DOKUMENTY –</h3>
+            <ul class="footer__list">
+                <li class="footer__item">Obchodní podmínky</li>
+                <li class="footer__item">Opravy a vrácení zboží</li>
+                <li class="footer__item">Podmínky a užívání</li>
+                <li class="footer__item">FAQ</li>
+            </ul>
+        </div>
+        <div class="footer__newsletter">
+            <h3 class="heading-tertiary">ODBĚR NEWSLETTERU –</h3>
+            <form action="post" class="form">
+                <input type="text" class="form__input" placeholder="Vaše jméno" aria-label="Vaše jméno">
+                <input type="email" class="form__input" placeholder="Váš e-mail" aria-label="Váš e-mail">
+                <button class="btn" type="submit">odebírat</button>
+            </form>
+        </div>
+        <div class="footer__owner">
+            <p class="paragraph u-center-text u-fw-500 u-fs-4">© BONCLÉ 2022. VŠECHNA PRÁVA VYHRAZENA.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -18,8 +18,13 @@ body {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.07em;
   line-height: 1.1;
+
+  &--small {
+    font-size: 2rem;
+    text-transform: none;
+  }
 }
 
 .heading-tertiary {
