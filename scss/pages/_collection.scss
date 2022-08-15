@@ -1,0 +1,36 @@
+.collection-detail {
+  margin-top: 11rem;
+
+  &__header {
+    display: grid;
+    grid-template: "text image" / 3fr 1fr;
+    margin-bottom: 20rem;
+    column-gap: 8rem;
+  }
+
+  &__text {
+    padding-top: 7rem;
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    grid-area: image;
+  }
+
+  &__unique {
+    line-height: 1.2;
+    margin-top: auto;
+    &--light {
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+    &--bold {
+      font-variant: small-caps;
+      font-size: 3rem;
+      font-weight: 500;
+    }
+  }
+
+}

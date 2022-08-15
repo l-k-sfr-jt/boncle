@@ -2,16 +2,36 @@
   text-align: center !important;
 }
 
+.u-right-text {
+  text-align: right;
+}
+
+.u-justify-text {
+  text-align: justify;
+}
+
 .u-fw-700 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .u-fw-600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .u-fw-500 {
   font-weight: 500 !important;
+}
+
+.u-fw-400 {
+  font-weight: 400 !important;
+}
+
+.u-fs-1 {
+  font-size: $default-font-size * 4.5;
+}
+
+.u-fs-2 {
+  font-size: $default-font-size * 1.8;
 }
 
 .u-fs-3 {
@@ -30,6 +50,13 @@
   text-transform: uppercase;
 }
 
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-letter-spacing-large {
+  letter-spacing: 0.07em;
+}
 .u-width-80 {
   width: 80%;
 }
@@ -54,8 +81,16 @@
   margin-top: 10rem !important;
 }
 
+.u-margin-bottom-xsmall {
+  margin-bottom: .5rem !important;
+}
+
 .u-margin-top-big {
   margin-top: 8rem !important;
+}
+
+.u-margin-right-medium {
+  margin-right: 4rem;
 }
 
 .u-margin-auto {

@@ -8,10 +8,14 @@ body {
 
 .heading-primary {
   font-size: 3rem;
-  font-size: $semibold;
+  font-weight: $semibold;
   margin-bottom: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.07em;
+
+  &--multiline {
+    line-height: 1.2;
+  }
 }
 
 .heading-secondary {
@@ -37,6 +41,7 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+  line-height: 1.9;
   &:not(:last-child) {
     margin-bottom: 3rem;
   }

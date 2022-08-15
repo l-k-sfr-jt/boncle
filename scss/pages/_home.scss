@@ -35,30 +35,30 @@
     align-items: center;
     justify-items: center;
   }
-}
 
-.collection {
-  display: grid;
-  grid-gap: 10rem;
-  grid-template:
+  .collection {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template:
             "image description" /
             1fr 2fr;
-  align-items: center;
-  &--swap {
-    grid-template:
+    align-items: center;
+    &--swap {
+      grid-template:
             "description image" /
             2fr 1fr;
-  }
-  &__image {
-    grid-area: image;
-  }
+    }
+    &__image {
+      grid-area: image;
+    }
 
-  &__description {
-    grid-area: description;
-  }
+    &__description {
+      grid-area: description;
+    }
 
-  &__controller {
-    display: flex;
-    gap: 4rem;
+    &__controller {
+      display: flex;
+      gap: 4rem;
+    }
   }
 }
