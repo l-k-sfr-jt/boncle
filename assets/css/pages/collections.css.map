@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "collections.css",
+	"sources": [
+		"../../../scss/pages/collections.scss"
+	],
+	"sourcesContent": [
+		".collections {\n  &__collection {\n    display: grid;\n    &--2 {\n      grid-template: \"image image info\" / 1fr 1fr 1fr;\n    }\n  }\n  &__image {\n    grid-area: image;\n  }\n\n  &__info {\n    grid-area: info;\n  }\n}"
+	],
+	"names": [],
+	"mappings": "AACG,AAAD,wBAAa,AAAC,CACZ,OAAO,CAAE,IAAI,CAId,AAHE,AAAD,2BAAI,AAAC,CACH,aAAa,CAAE,gCAAgC,CAChD,AAEF,AAAD,mBAAQ,AAAC,CACP,SAAS,CAAE,KAAK,CACjB,AAEA,AAAD,kBAAO,AAAC,CACN,SAAS,CAAE,IAAI,CAChB"
+}

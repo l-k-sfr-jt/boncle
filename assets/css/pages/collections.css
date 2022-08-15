@@ -1,0 +1,3 @@
+.collections__collection{display:grid}.collections__collection--2{grid-template:"image image info" / 1fr 1fr 1fr}.collections__image{grid-area:image}.collections__info{grid-area:info}
+
+/*# sourceMappingURL=collections.css.map */

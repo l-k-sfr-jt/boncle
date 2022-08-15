@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "checkout-product.css",
+	"sources": [
+		"../../../scss/components/checkout-product.scss"
+	],
+	"sourcesContent": [
+		".checkout-product {\n  display: grid;\n  grid-template-columns: 2fr 3fr;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,iBAAiB,AAAC,CAChB,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,OAAO,CAC/B"
+}
