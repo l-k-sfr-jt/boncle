@@ -1,9 +1,8 @@
 .collection-detail {
-  margin-top: 11rem;
 
   &__header {
     display: grid;
-    grid-template: "text image" / 3fr 1fr;
+    grid-template: "text image" / 2fr 1fr;
     margin-bottom: 20rem;
     column-gap: 8rem;
   }
@@ -17,6 +16,10 @@
 
   &__image {
     grid-area: image;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__unique {

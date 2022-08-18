@@ -16,16 +16,20 @@
   &__logo {
     grid-area: logo;
     justify-self: center;
+    img {
+      width: 15rem;
+    }
   }
 
   &__lang {
     grid-area: lang;
     justify-self: end;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     font-weight: $semibold;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     gap: 3rem;
+    font-variant: small-caps;
 
   }
 
