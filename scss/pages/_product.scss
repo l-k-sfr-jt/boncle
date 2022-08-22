@@ -2,7 +2,7 @@
   grid-template:
     "gallery info"
     / 1fr 1fr;
-  margin: 15rem 0;
+  gap: 8rem;
 
   &__gallery {
     display: grid;
@@ -23,6 +23,7 @@
 
   &__price {
     letter-spacing: 0.07em;
+    font-variant: small-caps;
   }
   &__colors {
     display: flex;
