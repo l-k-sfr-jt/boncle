@@ -16,6 +16,10 @@ body {
   &--multiline {
     line-height: 1.2;
   }
+
+  &--listing {
+    font-size: 5rem;
+  }
 }
 
 .heading-secondary {
@@ -39,7 +43,7 @@ body {
 
 }
 
-.paragraph {
+.paragraph, p {
   font-size: $default-font-size;
   line-height: 1.9;
   &:not(:last-child) {

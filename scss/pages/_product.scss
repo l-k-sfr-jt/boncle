@@ -1,7 +1,7 @@
 .product {
-  grid-template:
-    "gallery info"
-    / 1fr 1fr;
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  grid-auto-rows: auto;
   gap: 8rem;
 
   &__gallery {
@@ -24,6 +24,7 @@
   &__price {
     letter-spacing: 0.07em;
     font-variant: small-caps;
+    margin-bottom: 6rem;
   }
   &__colors {
     display: flex;

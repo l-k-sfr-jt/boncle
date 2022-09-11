@@ -1,13 +1,14 @@
 .nav {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: end;
   gap: 0 3rem;
 
   &__button {
     background: transparent;
     border: none;
+    padding: 0;
   }
 
   &__label {

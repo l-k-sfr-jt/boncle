@@ -1,5 +1,8 @@
 .btn {
   font-family: $font-main;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
   display: block;
   color: $color-secondary;
   font-weight: 600;
@@ -12,10 +15,17 @@
   border: none;
 
   &--large {
-    padding: 1.5rem 11rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
   }
 
   &--medium {
     padding: .9rem 11rem;
+  }
+
+  &--transparent {
+    background: transparent;
+    padding: 0;
+    line-height: 1;
   }
 }

@@ -1,5 +1,6 @@
 .header {
   padding-top: 4.5rem;
+  border-bottom: none;
   display: grid;
   align-items: center;
   grid-area: header;
@@ -25,7 +26,7 @@
     grid-area: lang;
     justify-self: end;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-weight: $semibold;
     font-size: 1.8rem;
     gap: 2.5rem;

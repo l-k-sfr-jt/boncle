@@ -1,4 +1,17 @@
 .box {
   border: 1px solid $color-primary;
-  padding: 2.5rem 3.9rem;
+  padding: 3rem 3.9rem;
+
+  &__content {
+    &--line {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &--scrollable {
+    height: 35rem;
+    overflow: scroll;
+  }
 }
