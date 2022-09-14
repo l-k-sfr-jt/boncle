@@ -12,11 +12,15 @@
 @import "components/collection";
 @import "components/form";
 @import "components/link";
+@import "components/product-item";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/product-list";
+@import "layout/sections";
+@import "layout/wear";
 
 @import "pages/basket";
 @import "pages/checkout";
@@ -25,3 +29,4 @@
 @import "pages/home";
 @import "pages/product";
 @import "pages/products-listing";
+@import "pages/stylists";

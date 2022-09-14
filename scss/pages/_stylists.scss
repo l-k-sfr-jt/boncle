@@ -1,0 +1,20 @@
+.stylists {
+  display: grid;
+  grid-template-columns:  minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr);
+
+  &__center {
+    grid-column: 2 / 3;
+  }
+
+  &__full-width {
+    grid-column:  1 / -1;
+  }
+
+  &__image {
+    background: url("./public/images/background/stylists.png") no-repeat center;
+    background-size: cover;
+    height: 75vh;
+    max-height: 73rem;
+    margin-bottom: 19.5rem;
+  }
+}

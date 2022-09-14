@@ -1,0 +1,19 @@
+.layout {
+  display: grid;
+  grid-auto-rows: auto;
+  align-items: center;
+  column-gap: 15rem;
+  margin-bottom: 19rem;
+
+  &-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &-2-3 {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  &-3-2 {
+    grid-template-columns: 3fr 2fr;
+  }
+}

@@ -22,15 +22,21 @@ body {
    ". header ."
     ". main ."
     ". footer ." /
-   minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr)
-;
+   minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr);
 
   @include respond(phone) {
     grid-template:
      ". main ."
     ". footer ." /
    minmax(5rem, 1fr) minmax(0, 118rem) minmax(5rem, 1fr)
+  }
 
+  &--fluid {
+    grid-template:
+   ". header ."
+    "main main main"
+    ". footer ." /
+   minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr);
   }
 }
 

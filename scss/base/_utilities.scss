@@ -26,6 +26,10 @@
   font-weight: 400 !important;
 }
 
+.u-fw-300 {
+  font-weight: 300 !important;
+}
+
 .u-fs-1 {
   font-size: $default-font-size * 4.5 !important;
 }
@@ -70,6 +74,9 @@
   letter-spacing: 0.05em;
 }
 
+.u-width-100 {
+  width: 100% !important;
+}
 .u-width-80 {
   width: 80% !important;
 }
@@ -77,6 +84,11 @@
 .u-width-75 {
   width: 75% !important;
 }
+
+.u-height-auto {
+  height: auto !important;
+}
+
 
 .u-margin-bottom-big {
   margin-bottom: 6rem !important;
@@ -117,7 +129,6 @@
 .u-margin-auto {
   margin: auto !important;
 }
-
 
 .u-d-inline {
   display: inline !important;
