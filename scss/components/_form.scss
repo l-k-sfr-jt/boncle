@@ -25,9 +25,14 @@
       color: $color-primary;
     }
     &:last-of-type {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &--message {
+      border: 1.2px solid $color-primary;
     }
   }
+
 
   &__select-input {
     padding: 1rem;

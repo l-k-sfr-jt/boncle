@@ -77,6 +77,13 @@
     margin-top: 1rem;
     font-variant: small-caps;
     line-height: 1.4;
+
+    &--rotated {
+      transform: rotate(180deg);
+      width: -moz-max-content;
+      text-orientation: sideways;
+      writing-mode: vertical-lr;
+    }
   }
 
   img {

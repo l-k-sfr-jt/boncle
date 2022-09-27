@@ -1,0 +1,39 @@
+.accessories {
+  .heading-secondary {
+    font-size: 4.5rem;
+  }
+
+  &__header-img {
+    display: flex;
+    gap: 6.9rem;
+    flex-direction: row;
+    margin: 0 0 19.5rem 0;
+
+    &--right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__section {
+    display: flex;
+    gap: 10rem;
+    margin: 0 7rem 19.5rem 7rem;
+
+    &--full {
+      margin: 0 1rem 0 0;
+    }
+
+    &__text {
+      margin-top: 5.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__paragraph {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+}

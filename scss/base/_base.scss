@@ -22,7 +22,8 @@ body {
    ". header ."
     ". main ."
     ". footer ." /
-   minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr);
+   minmax(3rem, 1fr) minmax(0, 137.2rem) minmax(3rem, 1fr)
+;
 
   @include respond(phone) {
     grid-template:

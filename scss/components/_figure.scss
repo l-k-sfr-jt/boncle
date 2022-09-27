@@ -1,0 +1,7 @@
+.figure {
+  &--rotated {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem
+  }
+}
