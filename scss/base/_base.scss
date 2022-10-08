@@ -22,7 +22,7 @@ body {
    ". header ."
     ". main ."
     ". footer ." /
-   minmax(3rem, 1fr) minmax(0, 137.2rem) minmax(3rem, 1fr)
+   minmax(3rem, 1fr) minmax(0, 134rem) minmax(3rem, 1fr)
 ;
 
   @include respond(phone) {
@@ -37,7 +37,7 @@ body {
    ". header ."
     "main main main"
     ". footer ." /
-   minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr);
+   minmax(3rem, 1fr) minmax(0, 134rem) minmax(3rem, 1fr);
   }
 }
 

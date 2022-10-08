@@ -10,6 +10,10 @@
   text-align: justify !important;
 }
 
+.u-fw-800 {
+  font-weight: 800 !important;
+
+}
 .u-fw-700 {
   font-weight: 700 !important;
 }
@@ -71,7 +75,7 @@
   letter-spacing: 0.07em;
 }
 .u-letter-spacing {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 .u-width-100 {
@@ -109,7 +113,9 @@
 .u-margin-bottom-xsmall {
   margin-bottom: .5rem !important;
 }
-
+.u-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
 .u-margin-top-xbig {
   margin-top: 10rem !important;
 }

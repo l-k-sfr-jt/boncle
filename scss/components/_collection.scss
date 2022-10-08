@@ -71,6 +71,17 @@
     margin-bottom: 4rem;
     font-size: 4.5rem;
     line-height: 1.2;
+
+    &--our-story {
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
   }
 
   &__caption {

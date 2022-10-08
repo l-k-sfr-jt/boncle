@@ -1,6 +1,6 @@
 .stylists {
   display: grid;
-  grid-template-columns:  minmax(8rem, 1fr) minmax(0, 137.2rem) minmax(8rem, 1fr);
+  grid-template-columns:  minmax(3rem, 1fr) minmax(0, 134rem) minmax(3rem, 1fr);
 
   &__center {
     grid-column: 2 / 3;

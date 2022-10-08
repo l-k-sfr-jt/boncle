@@ -1,0 +1,28 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    top: 5vh;
+  }
+  100% {
+    opacity: 1;
+    top: 0
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    top: 8vh;
+  }
+  100% {
+    top: 0;
+  }
+}

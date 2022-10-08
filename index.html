@@ -7,19 +7,50 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
 </head>
-<body>
-<div class="container">
+<body class="home">
+<div class="container home">
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__nav nav">
+                <button class="nav__button">
+                    <img src="assets/img/hamburger.svg" alt="Menu">
+                </button>
+                <span class="nav__label">Menu</span>
+            </nav>
+            <div class="header__logo">
+                <img src="assets/img/logo-small.svg" alt="Bonclé">
+            </div>
+            <div class="header__lang">
+                <a href="#" title="Košík" class="header__basket">
+                    <img src="assets/img/bakset.svg" alt="Košík">
+                </a>
+                <div class="lang-switcher">
+                <span class="lang-switcher__lang">
+                    CZ
+                </span>
+                    <span class="lang-switcher__lang">
+                    ENG
+                </span>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="main homepage">
-        <header class="header">
-            <h1 class="heading-primary"><img src="assets/img/logo.svg" alt="Bonclé"></h1>
-            <p class="paragraph paragraph--justify color-white">Čistá vášeň pro krásu a respekt k poctivému řemeslu skrytý pod rouškou tajemství, které se snoubí v konečném produktu jako tajná posedlost uměním. Každý detail a barevná kombinace kůže, nití a glazury vytvářejí neopakovatelný zážitek – tajemnou neřest ve vašem šatníku.
-            </p>
-        </header>
+        <section class="homepage__header">
+            <div class="homepage__heading-box">
+                <img class="homepage__heading" src="assets/img/logo.svg" alt="Boncle">
+                <p class="homepage__subtext">Čistá vášeň pro krásu a respekt k poctivému řemeslu skrytý pod rouškou tajemství, které se snoubí v
+                    konečném produktu jako tajná posedlost uměním. Každý detail a barevná kombinace kůže, nití a glazury
+                    vytvářejí neopakovatelný zážitek – tajemnou neřest ve vašem šatníku.</p>
+            </div>
+
+        </section>
         <section class="homepage__first">
             <img class="homepage__first__left" src="assets/img/first.png" alt="First">
-            <img  class="homepage__first__right" src="assets/img/second.png" alt="Second">
+            <img class="homepage__first__right" src="assets/img/second.png" alt="Second">
         </section>
         <section class="homepage__collections">
             <div class="collection">
@@ -28,22 +59,24 @@
                 </div>
                 <div class="collection__description">
                     <h2 class="heading-secondary u-margin-bottom-medium u-width-75">HOMMAGE <br>BY BONCLÉ</h2>
-                    <p class="paragraph u-fs-3">nespočet kombinací nošení </p>
-                    <p class="paragraph u-margin-bottom-big">Samostatná designová kolekce PS.OBJECTS, značky BONCLÉ, reprezentuje naprosto unikátní ručně šité kabelky kombinující kůži a glazovanou keramiku a cílí na milovníky haute-couture.</p>
+                    <p class="paragraph u-fs-3 u-fw-500">nespočet kombinací nošení </p>
+                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Kolekce HOMMAGE je určená ženám, které touží být onou femme fatale. Které chtějí zaujmout na první pohled a nerady splývají s davem. HOMMAGE je pro ženy, které milují hravost a barvy.</p>
                     <div class="collection__controller">
-                        <a href="#" class="link link--underline">VÍCE O KOLEKCI</a>
-                        <a href="#" class="link link--underline">PŘEJÍT NA ESHOP</a>
+                        <a href="#" class="link link--underline u-fs-5 u-fw-800">VÍCE O KOLEKCI</a>
+                        <a href="#" class="link link--underline u-fs-5 u-fw-800">PŘEJÍT NA ESHOP</a>
                     </div>
                 </div>
             </div>
             <div class="collection collection--swap">
                 <div class="collection__description">
                     <h2 class="heading-secondary u-margin-bottom-medium u-width-75">PŠ.OBJECTS<br>BY BONCLÉ</h2>
-                    <p class="paragraph u-fs-3">jedinečnost v každé kabelce</p>
-                    <p class="paragraph u-margin-bottom-big">Samostatná designová kolekce PS.OBJECTS, značky BONCLÉ, reprezentuje naprosto unikátní ručně šité kabelky kombinující kůži a glazovanou keramiku a cílí na milovníky haute-couture.</p>
+                    <p class="paragraph u-fs-3 u-fw-500">jedinečnost v každé kabelce</p>
+                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Samostatná designová kolekce PS.OBJECTS, značky BONCLÉ,
+                        reprezentuje naprosto unikátní ručně šité kabelky kombinující kůži a glazovanou keramiku a cílí
+                        na milovníky haute-couture.</p>
                     <div class="collection__controller">
-                        <a href="#" class="link link--underlien">VÍCE O KOLEKCI</a>
-                        <a href="#" class="link link--underline">PŘEJÍT NA ESHOP</a>
+                        <a href="#" class="link link--underline u-fs-5 u-fw-800">VÍCE O KOLEKCI</a>
+                        <a href="#" class="link link--underline u-fs-5 u-fw-800">PŘEJÍT NA ESHOP</a>
                     </div>
                 </div>
                 <div class="collection__image">
@@ -56,18 +89,21 @@
                 </div>
                 <div class="collection__description">
                     <h2 class="heading-secondary u-margin-bottom-medium u-width-75">JAK NOSIT<br>BONCLÉ</h2>
-                    <p class="paragraph u-fs-3">umění nošení kabelek</p>
-                    <p class="paragraph u-margin-bottom-big">Kabelky jsou více než hravé, můžete s nimi skoro až kouzlit. Kabelky BONCLÉ z kolekce HOMMAGE jsme navrhli tak, abyste je mohli navzájem kombinovat.</p>
+                    <p class="paragraph u-fs-3 u-fw-500">umění nošení kabelek</p>
+                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Kabelky jsou více než hravé, můžete s nimi skoro až
+                        kouzlit. Kabelky BONCLÉ z kolekce HOMMAGE jsme navrhli tak, abyste je mohli navzájem
+                        kombinovat.</p>
                     <div class="collection__controller">
-                        <a href="#" class="link link--underline">VÍCE O KOLEKCI</a>
-                        <a href="#" class="link link--underline">PŘEJÍT NA ESHOP</a>
+                        <a href="#" class="link link--underline u-fs-5 u-fw-800">VÍCE O KOLEKCI</a>
+                        <a href="#" class="link link--underline u-fs-5 u-fw-800">PŘEJÍT NA ESHOP</a>
                     </div>
                 </div>
             </div>
 
         </section>
         <section class="homepage__design-own">
-            <p class="paragraph paragraph--large u-width-80 u-center-text">Navrhněte si své vlastní Bonclé.</p>
+            <p class="paragraph paragraph--large u-width-80 u-center-text u-margin-bottom-none">Navrhněte si své vlastní Bonclé.</p>
+            <img src="/assets/img/arrow-down.svg" alt="" class="u-margin-bottom-medium">
             <a href="mailto:info@boncle.com" class="link link--underline">info@boncle.com</a>
         </section>
     </main>

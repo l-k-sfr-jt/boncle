@@ -6,9 +6,11 @@
   gap: 0 3rem;
 
   &__button {
+    cursor: pointer;
     background: transparent;
     border: none;
     padding: 0;
+    display: flex;
   }
 
   &__label {
@@ -16,5 +18,16 @@
     font-weight: 600;
     font-variant: small-caps;
     letter-spacing: 0.07em;
+  }
+
+  &__overlay {
+    background: rgba($color-primary, 0.32);
+    position: fixed;
+    inset: 0;
+    display: none;
+
+    &--open {
+      display: block;
+    }
   }
 }

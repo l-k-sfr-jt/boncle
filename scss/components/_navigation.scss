@@ -1,13 +1,48 @@
 .navigation {
   width: 33%;
   height: 100%;
+  position: absolute;
+  padding: 5.5rem 7rem;
+  top: 0;
+  left: 0;
   background: $color-secondary;
+  display: none;
 
-  &__overlay {
-
+  &--open {
+    display: block;
   }
 
-  &__nav {
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  &__nav, .sub-menu {
     list-style: none;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  &__link {
+    padding-bottom: 2rem;
+
+    a:visited, a:link {
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+
+    }
   }
 }

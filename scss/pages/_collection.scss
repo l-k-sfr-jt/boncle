@@ -8,18 +8,21 @@
   }
 
   &__text {
-    padding-top: 5.5rem;
+    padding-top: 4.5rem;
     grid-area: text;
     display: flex;
     flex-direction: column;
   }
 
+  &__heading {
+    font-size: 5.6rem;
+    margin-bottom: 4.8rem;
+  }
+
   &__image {
     grid-area: image;
-
-    img {
-      width: 100%;
-    }
+    width: 95%;
+    justify-self: end;
   }
 
   &__unique {

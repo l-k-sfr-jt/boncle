@@ -1,12 +1,16 @@
 .header {
-  padding-top: 4.5rem;
+  top: 4.5rem;
   border-bottom: none;
-  display: grid;
-  align-items: center;
+  position: sticky;
   grid-area: header;
-  grid-template:
+
+  &__wrapper {
+    display: grid;
+    align-items: center;
+    grid-template:
     "nav logo lang" /
     1fr 1fr 1fr;
+  }
 
   &__nav {
     grid-area: nav;
@@ -26,7 +30,7 @@
     grid-area: lang;
     justify-self: end;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     font-weight: $semibold;
     font-size: 1.8rem;
     gap: 2.5rem;

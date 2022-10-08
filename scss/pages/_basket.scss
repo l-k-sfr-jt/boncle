@@ -37,16 +37,19 @@
 
     &__info {
       grid-area: info;
-      display: flex;
-      gap: 3rem;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      height: 100%;
-      align-content: flex-start;
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+      justify-self: start;
+      align-self: start;
+      row-gap: 1.7rem;
     }
 
-    &__quantity, &__delete, &__price {
+    &__heading {
+      grid-column: 1 / -1;
+    }
+
+    &__delete {
+      justify-self: end;
 
     }
 
