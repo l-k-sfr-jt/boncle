@@ -3,6 +3,9 @@
   border-bottom: none;
   position: sticky;
   grid-area: header;
+  mix-blend-mode: exclusion;
+  color: $color-secondary;
+  z-index: 100;
 
   &__wrapper {
     display: grid;
@@ -53,7 +56,7 @@
 
     &__lang:not(:last-child) {
       content: "";
-      border-right: 1.5px solid $color-primary;
+      border-right: 1.5px solid $color-secondary;
     }
   }
 

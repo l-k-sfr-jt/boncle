@@ -7,6 +7,14 @@
   }
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -24,5 +32,27 @@
   }
   100% {
     top: 0;
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  100% {
+    left: -120%;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+  100% {
+    right: -120%;
+    opacity: 0;
   }
 }

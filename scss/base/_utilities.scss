@@ -146,3 +146,11 @@
 .u-d-none {
   display: none !important;
 }
+
+.u-opacity-0-animated {
+ animation: fadeOut 400ms forwards!important;
+}
+
+.u-opacity-1-animated {
+  animation: fadeIn 400ms forwards!important;
+}

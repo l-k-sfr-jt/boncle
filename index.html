@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426" defer></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3" defer></script>
+    <script src="assets/animations.js" defer></script>
 </head>
 <body class="home">
 <div class="container home">
@@ -40,27 +43,39 @@
     </header>
     <main class="main homepage">
         <section class="homepage__header">
-            <div class="homepage__heading-box">
+            <div id="headingBox" class="homepage__heading-box">
                 <img class="homepage__heading" src="assets/img/logo.svg" alt="Boncle">
-                <p class="homepage__subtext">Čistá vášeň pro krásu a respekt k poctivému řemeslu skrytý pod rouškou tajemství, které se snoubí v
+                <p class="homepage__subtext">Čistá vášeň pro krásu a respekt k poctivému řemeslu skrytý pod rouškou
+                    tajemství, které se snoubí v
                     konečném produktu jako tajná posedlost uměním. Každý detail a barevná kombinace kůže, nití a glazury
                     vytvářejí neopakovatelný zážitek – tajemnou neřest ve vašem šatníku.</p>
             </div>
 
         </section>
-        <section class="homepage__first">
+        <section id="headerImages" class="homepage__first">
             <img class="homepage__first__left" src="assets/img/first.png" alt="First">
             <img class="homepage__first__right" src="assets/img/second.png" alt="Second">
         </section>
-        <section class="homepage__collections">
+        <section id="lastHeading" class="homepage__last-heading">
+
+        </section>
+        <section id="headingEndSection" class="homepage__heading-fadeOut">
+
+        </section>
+        <section id="videoSection" class="homepage__video-wrapper">
+            <img src="assets/img/video-placeholder.png" class="homepage__video">
+        </section>
+        <section  class="homepage__collections">
             <div class="collection">
                 <div class="collection__image">
                     <img src="assets/img/home-hommage.png" class="img" alt="">
                 </div>
-                <div class="collection__description">
+                <div class="collection__description gs_reveal">
                     <h2 class="heading-secondary u-margin-bottom-medium u-width-75">HOMMAGE <br>BY BONCLÉ</h2>
                     <p class="paragraph u-fs-3 u-fw-500">nespočet kombinací nošení </p>
-                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Kolekce HOMMAGE je určená ženám, které touží být onou femme fatale. Které chtějí zaujmout na první pohled a nerady splývají s davem. HOMMAGE je pro ženy, které milují hravost a barvy.</p>
+                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Kolekce HOMMAGE je určená
+                        ženám, které touží být onou femme fatale. Které chtějí zaujmout na první pohled a nerady
+                        splývají s davem. HOMMAGE je pro ženy, které milují hravost a barvy.</p>
                     <div class="collection__controller">
                         <a href="#" class="link link--underline u-fs-5 u-fw-800">VÍCE O KOLEKCI</a>
                         <a href="#" class="link link--underline u-fs-5 u-fw-800">PŘEJÍT NA ESHOP</a>
@@ -68,10 +83,11 @@
                 </div>
             </div>
             <div class="collection collection--swap">
-                <div class="collection__description">
+                <div class="collection__description gs_reveal">
                     <h2 class="heading-secondary u-margin-bottom-medium u-width-75">PŠ.OBJECTS<br>BY BONCLÉ</h2>
                     <p class="paragraph u-fs-3 u-fw-500">jedinečnost v každé kabelce</p>
-                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Samostatná designová kolekce PS.OBJECTS, značky BONCLÉ,
+                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Samostatná designová
+                        kolekce PS.OBJECTS, značky BONCLÉ,
                         reprezentuje naprosto unikátní ručně šité kabelky kombinující kůži a glazovanou keramiku a cílí
                         na milovníky haute-couture.</p>
                     <div class="collection__controller">
@@ -87,10 +103,11 @@
                 <div class="collection__image">
                     <img src="assets/img/home-how-wear.png" class="img" alt="">
                 </div>
-                <div class="collection__description">
+                <div class="collection__description gs_reveal">
                     <h2 class="heading-secondary u-margin-bottom-medium u-width-75">JAK NOSIT<br>BONCLÉ</h2>
                     <p class="paragraph u-fs-3 u-fw-500">umění nošení kabelek</p>
-                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Kabelky jsou více než hravé, můžete s nimi skoro až
+                    <p class="paragraph u-letter-spacing u-justify-text u-margin-bottom-big">Kabelky jsou více než
+                        hravé, můžete s nimi skoro až
                         kouzlit. Kabelky BONCLÉ z kolekce HOMMAGE jsme navrhli tak, abyste je mohli navzájem
                         kombinovat.</p>
                     <div class="collection__controller">
@@ -102,7 +119,8 @@
 
         </section>
         <section class="homepage__design-own">
-            <p class="paragraph paragraph--large u-width-80 u-center-text u-margin-bottom-none">Navrhněte si své vlastní Bonclé.</p>
+            <p class="paragraph paragraph--large u-width-80 u-center-text u-margin-bottom-none">Navrhněte si své vlastní
+                Bonclé.</p>
             <img src="/assets/img/arrow-down.svg" alt="" class="u-margin-bottom-medium">
             <a href="mailto:info@boncle.com" class="link link--underline">info@boncle.com</a>
         </section>

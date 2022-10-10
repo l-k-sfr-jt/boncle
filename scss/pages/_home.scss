@@ -2,9 +2,12 @@
  display: grid;
   grid-template:
           ". heading ." 100vh
-          ". images . " 140vh
+          ". images ." 140vh
+          ". lastHeading ." 100vh
+          ". headingOut ." 100vh
+          "video video video"
           ". collections . "
-           ". own . " 90vh / 1fr 118.8rem 1fr;
+           ". own . " 90vh / minmax(0, 10rem) minmax(85%, 118.8rem) minmax(0, 10rem);
 
   &__first {
     grid-area: images;
@@ -32,9 +35,19 @@
   &__heading-box {
     width: min-content;
     position: fixed;
+    min-height: 27rem;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+
+    &--close {
+      .homepage__heading {
+        animation: fadeOutLeft linear 600ms;
+      }
+      .homepage__subtext {
+        animation: fadeOutRight linear 600ms;
+      }
+    }
   }
 
   &__heading {
@@ -48,8 +61,24 @@
     text-align: center;
     color: $color-secondary;
     letter-spacing: 0.03em;
-
     animation: fadeInUp linear 500ms 1.8s both;
+  }
+
+  &__last-heading {
+    grid-area: lastHeading;
+  }
+
+  &__heading-fadeOut {
+    grid-area: headingOut;
+  }
+
+  &__video-wrapper {
+    grid-area: video;
+    margin-bottom: 25rem;
+  }
+
+  &__video {
+    width: 100%;
   }
 
 
