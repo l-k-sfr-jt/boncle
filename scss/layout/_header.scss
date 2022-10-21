@@ -1,10 +1,15 @@
+.home .header {
+  position: sticky;
+  padding: 0;
+}
 .header {
   top: 4.5rem;
+  padding-top: 4.5rem;
   border-bottom: none;
-  position: sticky;
   grid-area: header;
   mix-blend-mode: exclusion;
-  color: $color-secondary;
+  color: $color-secondary !important;
+  background-color: transparent;
   z-index: 100;
 
   &__wrapper {
@@ -23,6 +28,7 @@
 
   &__logo {
     grid-area: logo;
+    mix-blend-mode: exclusion;
     justify-self: center;
     img {
       width: 15rem;

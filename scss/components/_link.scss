@@ -1,4 +1,5 @@
 .link {
+  display: inline-block;
   &, &:visited {
     color: $color-primary;
     text-decoration: none;
