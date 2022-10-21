@@ -51,10 +51,11 @@
     display: flex;
 
     &__lang {
-      padding: 0 1rem;
+      padding-left: 1rem;
     }
 
     &__lang:not(:last-child) {
+      padding-right: 1rem;
       content: "";
       border-right: 1.5px solid $color-secondary;
     }
