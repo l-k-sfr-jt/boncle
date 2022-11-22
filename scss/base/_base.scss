@@ -19,17 +19,17 @@ body {
 .container {
   display: grid;
   grid-template:
-   ". header ."
-    ". main ."
-    ". footer ." /
-   minmax(3rem, 1fr) minmax(0, 134rem) minmax(3rem, 1fr)
-;
+          ". header ."
+          ". main ."
+          ". footer ."
+          / minmax(3rem, 1fr) minmax(0, 134rem) minmax(3rem, 1fr);
 
   @include respond(phone) {
     grid-template:
-     ". main ."
-    ". footer ." /
-   minmax(5rem, 1fr) minmax(0, 118rem) minmax(5rem, 1fr)
+            ". header ."
+            ". main ."
+            ". footer ." /
+            minmax(2rem, 1fr) minmax(0, 118rem) minmax(2rem, 1fr);
   }
 
   &--fluid {

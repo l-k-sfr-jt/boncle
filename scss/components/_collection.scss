@@ -5,10 +5,19 @@
 
   &:not(:last-child) {
     margin-bottom: 20rem;
+    @include respond(phone) {
+      margin-bottom: 10rem;
+    }
   }
 
   &--1 {
     grid-template: "info image" / 3fr 5fr;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "info " / 100%;
+    }
   }
 
   &--1-half-right {
@@ -22,21 +31,50 @@
   &--1-reverse {
     grid-template: "image info" / 6fr 3fr;
     gap: 10rem;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "info " / 100%;
+      gap: 6rem
+    }
   }
 
   &--1-reverse-size {
     grid-template: "info image" / 6fr 3fr;
     gap: 10rem;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "info " / 100%;
+      gap: 6rem
+    }
   }
 
   &--1-reverse-size-reverse {
     grid-template: "image info" / 3fr 6fr;
     gap: 10rem;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "info " / 100%;
+      gap: 6rem
+    }
   }
 
   &--2 {
     grid-template: "image image2 info" / 1fr 1fr 1fr;
-    gap: 7.5rem
+    gap: 7.5rem;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "image2"
+              "info" / 100%;
+      gap: 4rem;
+    }
   }
 
   &--2-reverse {
@@ -56,6 +94,10 @@
       justify-content: space-between;
       padding: 4rem 0 15rem 0;
       align-items: start;
+
+      @include respond(phone) {
+        padding: 0;
+      }
     }
   }
 
@@ -82,6 +124,11 @@
     font-weight: 300;
     line-height: 1.4;
     letter-spacing: 0.03em;
+
+    @include respond(phone) {
+      font-size: 2.7rem;
+      margin-bottom: 6rem;
+    }
   }
 
   &__caption {
