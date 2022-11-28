@@ -2,6 +2,10 @@
   &--rotated {
     display: flex;
     align-items: flex-end;
-    gap: 3rem
+    gap: 3rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 }

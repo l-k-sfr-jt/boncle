@@ -17,15 +17,30 @@
       grid-template:
               "image"
               "info " / 100%;
+      gap: 4rem;
     }
   }
 
   &--1-half-right {
     grid-template: "info image" / 1fr 1fr;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "info " / 100%;
+      gap: 4rem;
+    }
   }
 
   &--1-half-left {
     grid-template: "image info" / 1fr 1fr;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "info " / 100%;
+      gap: 4rem;
+    }
   }
 
   &--1-reverse {
@@ -79,7 +94,15 @@
 
   &--2-reverse {
     grid-template: "info image image2 " / 1fr 1fr 1fr;
-    gap: 7.5rem
+    gap: 7.5rem;
+
+    @include respond(phone) {
+      grid-template:
+              "image"
+              "image2"
+              "info" / 100%;
+      gap: 4rem;
+    }
   }
 
   &__info {
@@ -114,6 +137,11 @@
     font-size: 4.5rem;
     line-height: 1.2;
 
+    @include respond(phone) {
+      font-size: 2.6rem;
+      margin-bottom: 3rem;
+    }
+
     &--our-story {
       font-size: 4rem;
     }
@@ -141,6 +169,13 @@
       width: -moz-max-content;
       text-orientation: sideways;
       writing-mode: vertical-lr;
+
+      @include respond(phone) {
+        margin-top: 0;
+        transform: none;
+        text-orientation: initial;
+        writing-mode: initial;
+      }
     }
   }
 
