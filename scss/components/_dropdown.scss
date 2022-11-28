@@ -1,0 +1,19 @@
+.dropdown {
+  &__button {
+    background-color: transparent;
+  }
+
+  &__content {
+    margin-top: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+}

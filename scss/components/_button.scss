@@ -13,6 +13,7 @@
   background-color: $color-primary;
   padding: .7rem 4rem;
   border: none;
+  cursor: pointer;
 
   &--large {
     padding: 1.5rem 2rem;
@@ -27,5 +28,27 @@
     background: transparent;
     padding: 0;
     line-height: 1;
+  }
+
+  &__dropdown {
+    background: transparent;
+    font-size: 1.4rem;
+    color: $color-primary;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem 1rem 0;
+
+    &::before {
+      content: "";
+      background-image: url("./public/images/icons/dropdown.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &:hover, &:focus {
+      background: transparent;
+    }
   }
 }

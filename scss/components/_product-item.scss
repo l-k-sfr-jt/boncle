@@ -1,5 +1,5 @@
 .product-item {
-  flex: 0 0  32rem;
+  flex: 0 0 calc(32rem - 3rem);
   display: flex;
 
   &__img {

@@ -5,6 +5,9 @@
   column-gap: 24rem;
 
   &__item {
+    width: 80%;
+    justify-self: center;
+
     &--1 {
       grid-row: 1 / 5;
     }
