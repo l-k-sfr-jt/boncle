@@ -5,15 +5,28 @@
   column-gap: 10rem;
   margin-bottom: 19rem;
 
+  @include respond(phone) {
+    row-gap: 6rem;
+    margin-bottom: 10rem;
+  }
+
   &-1-1 {
     grid-template-columns: 1fr 1fr;
   }
 
   &-2-3 {
     grid-template-columns: 2fr 3fr;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &-3-2 {
     grid-template-columns: 3fr 2fr;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
   }
 }

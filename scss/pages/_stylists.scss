@@ -16,5 +16,9 @@
     height: 75vh;
     max-height: 73rem;
     margin-bottom: 19.5rem;
+
+    @include respond(phone) {
+      margin-bottom: 10rem;
+    }
   }
 }
