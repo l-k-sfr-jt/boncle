@@ -6,6 +6,14 @@
     "form products" /
       1fr 1fr;
 
+  @include respond(phone) {
+    padding: 0;
+    grid-template:
+            "form"
+            "products" / 100%;
+    gap: 8rem;
+  }
+
   &__form {
     grid-area: form;
     display: flex;

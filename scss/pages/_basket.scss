@@ -13,7 +13,14 @@
     "products info" /
       4fr 2fr;
 
-  &__products {
+  @include respond(phone) {
+    grid-template:
+            "products"
+            "info" / 100%;
+    gap: 6rem;
+  }
+
+    &__products {
     grid-area: products;
   }
 
@@ -25,6 +32,14 @@
     display: grid;
     grid-template: "thumb info" / 1fr 3fr;
     gap: 4.5rem;
+
+    @include respond(phone) {
+      grid-template:
+              "thumb"
+              "info" / 100%;
+      gap: 2.5rem;
+    }
+
 
     &__thumb {
       grid-area: thumb;
