@@ -2,10 +2,11 @@
   width: 33%;
   height: 100%;
   position: fixed;
+  z-index: 100;
   padding: 5.5rem 7rem;
   top: 0;
   left: 0;
-  background: $color-primary;
+  background: $color-secondary;
   display: none;
 
   &--open {
