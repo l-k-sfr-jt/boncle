@@ -4,11 +4,14 @@ const HEADING_END = '#headingEndSection';
 const HEADER_IMG = '#headerImages'
 const SUBTEXT = '.homepage__subtext'
 const VIDEO_START = "#videoSection";
+const HOMEPAGE_VIDEO = 'homepageVideo'
 
 
 //gsap
 
 gsap.registerPlugin(ScrollTrigger);
+
+const videoElm = document.getElementById(HOMEPAGE_VIDEO);
 
 
 const tl = gsap.timeline({
@@ -16,7 +19,10 @@ const tl = gsap.timeline({
         trigger: VIDEO_START,
         scrub: true,
         pin: true,
-
+        onEnter: () => videoElm.play(),
+        onEnterBack: () => videoElm.play(),
+        onLeave: () => videoElm.pause(),
+        onLeaveBack: () => videoElm.pause(),
         start: "50% 50%",
         end: "+=200%"
     }
