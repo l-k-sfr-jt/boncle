@@ -1,4 +1,7 @@
 .product-list {
+  &:not(:last-child) {
+    margin-bottom: 17rem;
+  }
   &__category-header {
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +14,6 @@
     display: flex;
     flex-direction: row;
     gap: 5rem 3rem;
-    margin-bottom: 17rem;
   }
 
   &__carousel-controls {
