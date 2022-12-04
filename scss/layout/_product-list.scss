@@ -1,13 +1,38 @@
 .product-list {
   &:not(:last-child) {
     margin-bottom: 17rem;
+
+    @include respond(phone) {
+      margin-bottom: 7rem;
+    }
   }
+
   &__category-header {
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 3rem;
+    align-items: flex-start;
     margin-bottom: 7rem;
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__category-header-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    @include respond(phone) {
+      gap: .6rem;
+    }
+  }
+
+  &__category-heading {
+    font-size: 2.5rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__products {
@@ -18,10 +43,16 @@
 
   &__carousel-controls {
     margin-left: auto;
+    display: flex;
+    height: 40px;
   }
 
   &__category-description {
     font-size: 1.8rem;
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
   }
 }
 .products-carousel {

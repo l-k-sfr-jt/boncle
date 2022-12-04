@@ -2,6 +2,10 @@
   flex: 0 0 calc(32rem - 3rem);
   display: flex;
 
+  @include respond(phone) {
+    flex: 0 0 calc(19rem - 3rem);
+  }
+
   &__img {
     width: 100%;
     height: auto;
@@ -17,6 +21,12 @@
     margin-bottom: 1rem;
     font-variant: all-small-caps;
 
+    @include respond(phone) {
+      letter-spacing: 0.05em;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
     &--number {
       font-size: 1.5rem;
       font-weight: 500;
@@ -31,5 +41,10 @@
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.07em;
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+    }
   }
 }
