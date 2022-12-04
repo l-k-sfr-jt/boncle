@@ -1,0 +1,27 @@
+.progress-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+
+  @include respond(phone) {
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    font-weight: 400;
+    letter-spacing: 0.07em;
+
+    &--active {
+      font-weight: $semibold;
+    }
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
+  }
+
+
+}

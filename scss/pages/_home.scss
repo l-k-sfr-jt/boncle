@@ -6,7 +6,7 @@
           ". lastHeading ." 100vh
           ". headingOut ." 100vh
           "video video video"
-          ". collections . "
+          "collections collections collections"
            ". own . " 90vh / minmax(0, 10rem) minmax(85%, 118.8rem) minmax(0, 10rem);
 
   &__first {
@@ -15,13 +15,25 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
     &__left {
       grid-area: 1 / 1 / 3 /2;
+
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+      }
     }
 
     &__right {
       grid-area: 2 / 2 / 4 / 3;
       justify-self: end;
+
+      @include respond(phone) {
+        grid-area: 3 / 1 / 5 / 2;
+      }
     }
   }
 
@@ -107,10 +119,21 @@
             1fr 2fr;
     align-items: center;
     margin-bottom: 0;
+    @include respond(phone) {
+      grid-template:
+            "image"
+            "description" / 1fr;
+    }
     &--swap {
       grid-template:
             "description image" /
             2fr 1fr;
+
+      @include respond(phone) {
+        grid-template:
+            "image"
+            "description" / 1fr;
+      }
     }
     &__image {
       grid-area: image;
