@@ -26,6 +26,7 @@
     flex: 1 0 30%;
 
     @include respond(phone) {
+      width: 100%;
       &:nth-child(2) {
         display: none;
       }
