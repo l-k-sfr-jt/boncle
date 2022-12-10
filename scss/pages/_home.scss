@@ -111,6 +111,14 @@
     justify-items: center;
   }
 
+  &__design-own-text {
+    width: 80%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
   .collection {
     display: grid;
     grid-gap: 10rem;

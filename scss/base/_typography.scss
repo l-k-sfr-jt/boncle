@@ -54,6 +54,7 @@ body {
 .paragraph, p {
   font-size: $default-font-size;
   line-height: 1.9;
+
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -62,6 +63,10 @@ body {
     font-size: 7rem;
     letter-spacing: 0.07em;
     line-height: normal;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
   }
 
   &--story {
