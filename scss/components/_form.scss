@@ -34,6 +34,11 @@
     }
   }
 
+  &__input-checkbox {
+    position: static!important;
+    translate: none!important;
+
+  }
 
   &__select-input {
     padding: 1rem;
@@ -41,5 +46,11 @@
   }
   .form-group--full{
     grid-column: 1 / -1;
+  }
+
+  &__input-different-location {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
   }
 }

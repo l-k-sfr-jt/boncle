@@ -18,6 +18,10 @@
     grid-area: form;
     display: flex;
     flex-direction: column;
+
+    @include respond(phone) {
+      row-gap: 5rem;
+    }
   }
 
   &__products {
@@ -58,6 +62,7 @@
       font-size: 1.1rem;
       text-transform: uppercase;
     }
+
     .summary__price {
       text-transform: uppercase;
       font-weight: 500;
