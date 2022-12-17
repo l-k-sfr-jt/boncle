@@ -8,8 +8,8 @@
 
     @include respond(phone) {
       flex-direction: column;
-      align-items: start;
-      margin-bottom: 4rem;
+      align-items: center;
+      margin-bottom: 8rem;
     }
   }
 
@@ -18,7 +18,7 @@
     flex: 1 1 auto;
 
     @include respond(phone) {
-      margin-left: 0;
+      margin: 0;
     }
   }
 

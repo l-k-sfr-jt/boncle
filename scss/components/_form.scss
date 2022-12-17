@@ -37,6 +37,15 @@
   &__input-checkbox {
     position: static!important;
     translate: none!important;
+    transform: none;
+    height: 2.4rem;
+    width: 2.4rem;
+    border: none;
+
+    @include respond(phone) {
+      width: 1.9rem;
+      height: 1.9rem;
+    }
 
   }
 
@@ -50,7 +59,8 @@
 
   &__input-different-location {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 2rem;
+    justify-content: space-between;
   }
 }
