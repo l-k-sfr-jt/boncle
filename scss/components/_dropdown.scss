@@ -1,16 +1,26 @@
 .dropdown {
+
   &__button {
     background-color: transparent;
   }
 
   &__content {
-    margin-top: 2rem;
+    margin: 2rem 0 0 4rem;
+
+    @include respond(phone) {
+      margin: 2rem 0 0 2rem;
+    }
   }
 
   &__item {
     display: flex;
     gap: 1.6rem;
     margin-bottom: 2rem;
+    font-size: 1.4rem;
+
+    ul {
+      list-style: none;
+    }
   }
 
   &__text {

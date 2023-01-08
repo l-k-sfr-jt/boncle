@@ -56,4 +56,16 @@
   &__add-to-cart {
     padding: 1.4rem 11rem
   }
+
+  &__warning {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
 }
