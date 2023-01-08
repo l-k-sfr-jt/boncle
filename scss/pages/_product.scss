@@ -10,6 +10,22 @@
     gap: 5rem;
   }
 
+  &__back-link {
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: 3rem;
+
+    &:before {
+      content: url("./public/images/icons/arrow-back.svg");
+      height: 2.1rem;
+    }
+  }
+
     &__heading {
       font-size: 2rem;
       line-height: 1.55;
