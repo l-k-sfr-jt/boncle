@@ -1,6 +1,7 @@
 .dropdown {
 
   &__content {
+    display: none;
     margin: 2rem 0 0 4rem;
 
     @include respond(phone) {

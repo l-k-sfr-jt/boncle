@@ -49,6 +49,10 @@
       height: 2rem;
     }
 
+    &--open::before {
+      rotate: 180deg;
+    }
+
     &:hover, &:focus {
       background: transparent;
     }
