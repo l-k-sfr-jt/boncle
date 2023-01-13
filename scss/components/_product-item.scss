@@ -9,8 +9,9 @@
   &__img {
     width: 100%;
     height: auto;
+    display: block;
     aspect-ratio: 1 / 1;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   &__title {
@@ -46,5 +47,29 @@
       font-size: 1.2rem;
       letter-spacing: 0.05em;
     }
+  }
+
+  &__sold-out {
+    position: relative;
+    display: block;
+
+  }
+
+  &__sold-out-text {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.2rem;
+    background-color: $color-secondary;
+    font-weight: 600;
+    font-variant: small-caps;
+    font-size: 1rem;
+    letter-spacing: 0.07em;
+    padding: .6rem 1.2rem;
+  }
+
+  &__sold-out-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba($color-primary, 0.35);
   }
 }

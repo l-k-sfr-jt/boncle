@@ -12,7 +12,6 @@
 
 .u-fw-800 {
   font-weight: 800 !important;
-
 }
 .u-fw-700 {
   font-weight: 700 !important;
@@ -37,7 +36,6 @@
 .u-fs-1 {
   font-size: $default-font-size * 4.5 !important;
 }
-
 
 .u-fs-2 {
   font-size: $default-font-size * 1.8 !important;
@@ -153,6 +151,10 @@
   margin: auto !important;
 }
 
+.u-d-block {
+  display: block !important;
+}
+
 .u-d-inline {
   display: inline !important;
 }
@@ -160,6 +162,7 @@
 .u-d-flex {
   display: flex;
 }
+
 .u-d-none {
   display: none !important;
 }

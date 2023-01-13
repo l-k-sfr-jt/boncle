@@ -1,9 +1,9 @@
 .product-list {
   &:not(:last-child) {
-    margin-bottom: 17rem;
+    margin-bottom: 9rem;
 
     @include respond(phone) {
-      margin-bottom: 11rem;
+      margin-bottom: 6rem;
     }
   }
 
@@ -67,8 +67,18 @@
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  margin-bottom: 8rem;
+
+  @include respond(phone) {
+    margin-bottom: 4rem;
+  }
 }
 .carousel-control {
   background-color: transparent;
   border: none;
+
+  &:disabled {
+    background: transparent;
+    filter: invert(60%);
+  }
 }
