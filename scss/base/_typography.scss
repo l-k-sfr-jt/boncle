@@ -55,9 +55,9 @@ body {
   font-size: $default-font-size;
   line-height: 1.9;
 
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+  //&:not(:last-child) {
+  //  margin-bottom: 3rem;
+  //}
 
   &--large {
     font-size: 7rem;

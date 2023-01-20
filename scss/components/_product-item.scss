@@ -1,6 +1,7 @@
 .product-item {
   flex: 0 0 calc(32rem - 3rem);
   display: flex;
+  position: relative;
 
   @include respond(phone) {
     flex: 0 0 calc(19rem - 3rem);
@@ -49,27 +50,16 @@
     }
   }
 
-  &__sold-out {
-    position: relative;
-    display: block;
-
-  }
-
-  &__sold-out-text {
+  &__sold-out{
     position: absolute;
     top: 1.4rem;
     left: 1.2rem;
-    background-color: $color-secondary;
+    background-color: $color-primary;
+    color: $color-secondary;
     font-weight: 600;
     font-variant: small-caps;
     font-size: 1rem;
     letter-spacing: 0.07em;
     padding: .6rem 1.2rem;
-  }
-
-  &__sold-out-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba($color-primary, 0.35);
   }
 }

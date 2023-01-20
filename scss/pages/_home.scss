@@ -6,8 +6,8 @@
           ". lastHeading ." 100vh
           ". headingOut ." 100vh
           "video video video"
-          "collections collections collections"
-           ". own . " 90vh / minmax(0, 10rem) minmax(85%, 118.8rem) minmax(0, 10rem);
+          ". collections ."
+           ". own . " auto / minmax(3rem, 1fr) minmax(0, 118.8rem) minmax(3rem, 1fr);
 
   &__first {
     grid-area: images;
@@ -103,6 +103,7 @@
 
   &__design-own {
     grid-area: own;
+    margin-top: 30rem;
     justify-self: center;
     align-self: center;
     display: grid;

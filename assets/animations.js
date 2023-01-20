@@ -24,22 +24,24 @@ const tl = gsap.timeline({
         onLeave: () => videoElm.pause(),
         onLeaveBack: () => videoElm.pause(),
         start: "50% 50%",
-        end: "+=200%"
+        end: "+=200%",
     }
 })
     .fromTo(".homepage__video", {
         scale: 0.5,
         ease: "none"
     }, {
-        scale: 1,
+        scale: 1.2,
         ease: "none"
     }).fromTo(".homepage__video", {
-        scale: 1,
+        scale: 1.2,
         ease: "none"
     }, {
         scale: 0.5,
         ease: "none"
-    })
+    });
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const headingBoxElm = document.querySelector(HEADING_BOX);
