@@ -1,10 +1,10 @@
 .homepage {
- display: grid;
+  margin-top: 0;
+  display: grid;
   grid-template:
-          ". heading ." 100vh
+          ". heading ." 97vh
           ". images ." 140vh
           ". lastHeading ." 100vh
-          ". headingOut ." 100vh
           "video video video"
           ". collections ."
            ". own . " auto / minmax(3rem, 1fr) minmax(0, 118.8rem) minmax(3rem, 1fr);
@@ -42,28 +42,29 @@
     grid-area: heading;
     height: 100vh;
     mix-blend-mode: exclusion;
+    position: relative;
   }
 
   &__heading-box {
     width: min-content;
-    position: fixed;
     min-height: 27rem;
+    position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
 
     &--close {
       .homepage__heading {
-        animation: fadeOutLeft linear 600ms;
+        //animation: fadeOutLeft linear 600ms;
       }
+
       .homepage__subtext {
-        animation: fadeOutRight linear 600ms;
+        //animation: fadeOutRight linear 600ms;
       }
     }
   }
 
   &__heading {
-    animation: fadeIn linear 1s 800ms both, moveUp linear 500ms 1.8s both;
     position: relative;
     margin-bottom: 2.7rem;
   }
@@ -73,15 +74,10 @@
     text-align: center;
     color: $color-secondary;
     letter-spacing: 0.03em;
-    animation: fadeInUp linear 500ms 1.8s both;
   }
 
   &__last-heading {
     grid-area: lastHeading;
-  }
-
-  &__heading-fadeOut {
-    grid-area: headingOut;
   }
 
   &__video-wrapper {
@@ -133,6 +129,7 @@
             "image"
             "description" / 1fr;
     }
+
     &--swap {
       grid-template:
             "description image" /
@@ -144,6 +141,7 @@
             "description" / 1fr;
       }
     }
+
     &__image {
       grid-area: image;
     }
@@ -157,8 +155,4 @@
       gap: 4rem;
     }
   }
-}
-
-.home .header {
-  animation: fadeIn linear 800ms 2.4s both
 }
