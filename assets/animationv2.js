@@ -13,18 +13,17 @@ gsap.registerPlugin(ScrollTrigger);
 const headerScroll = gsap.timeline({
     defaults: {duration: 1.5},
     scrollTrigger: {
-        start: "center center",
-        end: "+=260%",
+        start: "top center",
+        end: "+=320%",
         pin: true,
-        markers: true,
         trigger: ".homepage__header",
         onLeave: () => {
-            gsap.to(".homepage__heading", {x: -400, opacity: 0, overwrite: true, duration: .7});
-            gsap.to(SUBTEXT, {x: 400, opacity: 0, overwrite: true, duration: .7});
+            gsap.to(".homepage__heading", {x: -600, opacity: 0, overwrite: true, duration: .4});
+            gsap.to(SUBTEXT, {x: 600, opacity: 0, overwrite: true, duration: .4});
         },
         onEnterBack: () => {
-            gsap.to(".homepage__heading", {x: 0, opacity: 1, overwrite: true, duration: .7});
-            gsap.to(SUBTEXT, {x: 0, opacity: 1, overwrite: true, duration: .7});
+            gsap.to(".homepage__heading", {x: 0, opacity: 1, overwrite: true, duration: .6});
+            gsap.to(SUBTEXT, {x: 0, opacity: 1, overwrite: true, duration: .6});
         }
     }
 });
@@ -32,7 +31,6 @@ const headerScroll = gsap.timeline({
 ScrollTrigger.create({
     trigger: "#headerImages",
     start: "top 75%",
-    markers: true,
     onEnter: self => gsap.effects.swapText(SUBTEXT, {text: "Vlastnit BONCLÉ znamená mnoho. Je jedinečné a rafinované a oslavuje rukodělnou práci, která podtrhne vaše originální já. S BONCLÉ nesplynete s davem, každý kus je jediný takový na světě."}) ,
     onLeaveBack: self => gsap.effects.swapText(SUBTEXT, {text: "Čistá vášeň pro krásu a respekt k poctivému řemeslu skrytý pod rouškou tajemství, které se snoubí v konečném produktu jako tajná posedlost uměním. Každý detail a barevná kombinace kůže, nití a glazury vytvářejí neopakovatelný zážitek – tajemnou neřest ve vašem šatníku." })
 });
@@ -40,7 +38,6 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: "#headerImages",
     start: "bottom 65%",
-    markers: true,
     onEnter: self => gsap.effects.swapText(SUBTEXT, {text: "Kabelky BONCLÉ z kolekce PŠ.OBJECTS a doplňky Clay Sparks obsahují keramický element, který v sobě nese záhadu dávných dob a sochařského umu a rukopis, který BONCLÉ pozvedá na vyšší úroveň – nejen módního doplňku."}) ,
     onLeaveBack: self => gsap.effects.swapText(SUBTEXT, {text: "Vlastnit BONCLÉ znamená mnoho. Je jedinečné a rafinované a oslavuje rukodělnou práci, která podtrhne vaše originální já. S BONCLÉ nesplynete s davem, každý kus je jediný takový na světě." })
 });
@@ -48,7 +45,6 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: "#headerImages",
     start: "bottom 25%",
-    markers: true,
     onEnter: self => gsap.effects.swapText(SUBTEXT, {text: "Všechny produkty vyrábíme v Praze v České republice."}),
     onLeaveBack: self => gsap.effects.swapText(SUBTEXT, {text: "Kabelky BONCLÉ z kolekce PŠ.OBJECTS a doplňky Clay Sparks obsahují keramický element, který v sobě nese záhadu dávných dob a sochařského umu a rukopis, který BONCLÉ pozvedá na vyšší úroveň – nejen módního doplňku." })
 });
