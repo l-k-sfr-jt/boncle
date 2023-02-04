@@ -19,14 +19,38 @@ const headerScroll = gsap.timeline({
         trigger: ".homepage__header",
         onLeave: () => {
             gsap.to(".homepage__heading", {x: -600, opacity: 0, overwrite: true, duration: .4});
+            gsap.to(".homepage__arrow", {y: -20, opacity: 0, overwrite: true, duration: .6});
             gsap.to(SUBTEXT, {x: 600, opacity: 0, overwrite: true, duration: .4});
         },
         onEnterBack: () => {
             gsap.to(".homepage__heading", {x: 0, opacity: 1, overwrite: true, duration: .6});
+            gsap.to(".homepage__arrow", {y: 0, opacity: 1, overwrite: true, duration: .6});
             gsap.to(SUBTEXT, {x: 0, opacity: 1, overwrite: true, duration: .6});
         }
     }
 });
+
+ScrollTrigger.create({
+
+    trigger: '.homepage__arrow',
+    start: 0,
+    end: '+=250%',
+    pin: true,
+    markers: true,
+    pinSpacing: false,
+    onLeave: () => {
+        gsap.to(".homepage__arrow img", { opacity: 0, duration: .7});
+    },
+
+    onEnterBack: () => {
+        gsap.to(".homepage__arrow img", { opacity: 1, duration: .7});
+    },
+
+})
+
+gsap.fromTo(".homepage__arrow img", {y: -6}, {y: 8, yoyo: true, repeat: -1, duration: 1.5,
+        ease: "sine.inOut"
+    });
 
 ScrollTrigger.create({
     trigger: "#headerImages",
@@ -53,7 +77,7 @@ const headerTL =  gsap.timeline({defaults: {duration: 1.5}});
 headerTL.fromTo('.homepage__heading', {opacity: 0, y: 80}, {opacity: 1, delay: .5})
     .fromTo(SUBTEXT, {opacity: 0, y: 50}, {opacity: 1, y: 0,})
     .to('.homepage__heading', {y: 0}, '<');
-headerTL.fromTo('.header', {opacity: 0}, {opacity: 1});
+headerTL.fromTo('.home .header', {opacity: 0}, {opacity: 1});
 
 
 //Video

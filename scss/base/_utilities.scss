@@ -79,6 +79,10 @@
 
 .u-letter-spacing-large {
   letter-spacing: 0.07em;
+
+  @include respond(phone) {
+    letter-spacing: 0.05em;
+  }
 }
 .u-letter-spacing {
   letter-spacing: 0.03em;

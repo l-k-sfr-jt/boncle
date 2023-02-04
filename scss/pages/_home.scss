@@ -51,6 +51,12 @@
     }
   }
 
+  &__arrow {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+  }
+
 
   &__header {
     grid-area: heading;

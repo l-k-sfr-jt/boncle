@@ -48,6 +48,11 @@
     margin-left: auto;
     display: flex;
     height: 40px;
+
+    @include respond(phone) {
+      height: 33px;
+      align-items: center;
+    }
   }
 
   &__category-description {
@@ -58,6 +63,7 @@
     }
   }
 }
+
 .products-carousel {
   position: relative;
   -webkit-overflow-scrolling: touch;
@@ -73,9 +79,20 @@
     margin-bottom: 4rem;
   }
 }
+
 .carousel-control {
   background-color: transparent;
   border: none;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include respond(phone) {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 
   &:disabled {
     background: transparent;
