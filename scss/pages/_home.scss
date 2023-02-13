@@ -13,10 +13,10 @@
   @include respond(phone) {
     grid-template:
           ". heading ." 97vh
-          "images images images" 140vh
+          ". images ." 140vh
           ". lastHeading ." 80vh
           "video video video"
-          "collections collections collections"
+          ". collections ."
            ". own . " auto / minmax(3rem, 1fr) minmax(0, 118.8rem) minmax(3rem, 1fr);
   }
 

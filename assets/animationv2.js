@@ -87,7 +87,6 @@ const tl = gsap.timeline({
 
 
 //Collections
-
 gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
     gsap.set(elem, {autoAlpha: 0}); // assure that the element is hidden when scrolled into view
     ScrollTrigger.create({
@@ -136,3 +135,38 @@ gsap.registerEffect({
     extendTimeline: true
 });
 
+
+const ham = document.querySelector("#navOpener");
+const menu = document.querySelector('#navigation');
+const overlay = document.querySelector('#navOverlay');
+const links = menu.querySelectorAll('.menu-item');
+
+var navTl = gsap.timeline({ paused: true });
+
+navTl.to(menu, {
+    duration: 1,
+    opacity: 1,
+    left: 0,
+    width: '33%', // change this to 100vh for full-height menu
+    ease: 'expo.inOut',
+})
+
+navTl.to(overlay, {
+    duration: 1.8,
+    opacity: 1,
+    width: '100%', // change this to 100vh for full-height menu
+    ease: 'expo.inOut',
+},0)
+navTl.from(links, {
+    duration: 1,
+    opacity: 0,
+    x: -20,
+    stagger: 0.1,
+    ease: 'expo.inOut',
+}, "-=0.5");
+
+navTl.reverse();
+
+ham.addEventListener('click', () => {
+    navTl.reversed(!navTl.reversed());
+});
