@@ -14,11 +14,16 @@
       justify-content: space-between;
     }
 
+    &--center {
+      align-items: center;
+    }
+
     &--border{
       padding-bottom: 1.5rem;
       border-bottom: 1px solid $color-primary;
     }
   }
+
 
   &--scrollable {
     height: 35rem;
