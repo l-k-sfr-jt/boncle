@@ -171,6 +171,13 @@
   display: block !important;
 }
 
+.u-d-block-phone {
+  @include respond(phone) {
+    display: block !important;
+  }
+}
+
+
 .u-d-inline {
   display: inline !important;
 }

@@ -24,6 +24,8 @@
     gap: 3rem;
     @include respond(phone) {
       gap: .6rem;
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 
