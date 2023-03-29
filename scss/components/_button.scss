@@ -70,6 +70,9 @@
 }
 
 input[type="submit"] {
+  -webkit-appearance:none;
   background-color: $color-primary;
   color: $color-secondary;
+  border-radius: 0;
+  padding: .7rem 4rem;
 }

@@ -51,6 +51,6 @@ body {
   }
 
   @include respond(phone) {
-    margin: 6rem 0 17rem 0;
+    margin: 5rem 0 17rem 0;
   }
 }

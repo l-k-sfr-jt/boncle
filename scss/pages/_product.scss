@@ -4,33 +4,36 @@
   grid-template-columns: 6fr 5fr;
   grid-auto-rows: auto;
   gap: 8rem;
+  overflow: visible!important;
 
   @include respond(phone) {
     grid-template-columns: 100%;
     gap: 5rem;
+    margin-top: 0;
   }
 
-    &__heading {
-      font-size: 2rem;
-      line-height: 1.55;
-  }
-
-  &__gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+  &__heading {
+    font-size: 2rem;
+    line-height: 1.55;
   }
 
   &__image {
     max-width: 100%;
     height: auto;
+
     &--main {
       grid-column: 1 / -1;
     }
   }
+
   &__info {
     display: flex;
     flex-direction: column;
+  }
+
+  &__wrapper {
+    position: sticky;
+    top: 5rem;
   }
 
   &__add-form {
@@ -47,6 +50,7 @@
       margin-bottom: 4rem;
     }
   }
+
   &__colors {
     display: flex;
     flex-wrap: wrap;

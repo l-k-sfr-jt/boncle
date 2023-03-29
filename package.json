@@ -17,6 +17,7 @@
   "author": "Lukas Frajt",
   "license": "ISC",
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.4",
     "autoprefixer": "^10.4.7",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.18",
