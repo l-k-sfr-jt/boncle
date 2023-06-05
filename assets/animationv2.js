@@ -12,8 +12,8 @@ function raf(time) {
     lenis.raf(time)
     requestAnimationFrame(raf)
 }
-
 requestAnimationFrame(raf);
+
 //gsap
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +22,6 @@ gsap.to("#headerImages img", {
     scrollTrigger: {
         triger: "#headerImages", // start the animation when ".box" enters the viewport (once)
         scrub: 3,
-
     },
     stagger: {
         each: .6,
@@ -40,19 +39,18 @@ const headerScroll = gsap.timeline({
         trigger: ".homepage__header",
         onLeave: () => {
             gsap.to(".homepage__heading", {x: -600, opacity: 0, overwrite: true, duration: .4});
-            gsap.to(".homepage__arrow", {y: -20, opacity: 0, overwrite: true, duration: .6});
             gsap.to(SUBTEXT, {x: 600, opacity: 0, overwrite: true, duration: .4});
         },
         onEnterBack: () => {
             gsap.to(".homepage__heading", {x: 0, opacity: 1, overwrite: true, duration: .6});
-            gsap.to(".homepage__arrow", {y: 0, opacity: 1, overwrite: true, duration: .6});
             gsap.to(SUBTEXT, {x: 0, opacity: 1, overwrite: true, duration: .6});
         }
     }
 });
 
-ScrollTrigger.create({
 
+
+ScrollTrigger.create({
     trigger: '.homepage__arrow',
     start: 0,
     end: '+=250%',
@@ -62,12 +60,10 @@ ScrollTrigger.create({
     onLeave: () => {
         gsap.to(".homepage__arrow img", {opacity: 0, duration: .7});
     },
-
     onEnterBack: () => {
         gsap.to(".homepage__arrow img", {opacity: 1, duration: .7});
     },
-
-})
+});
 
 gsap.fromTo(".homepage__arrow img", {y: -6}, {
     y: 8, yoyo: true, repeat: -1, duration: 1.5,

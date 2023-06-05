@@ -67,10 +67,26 @@
   &__basket {
     mix-blend-mode: exclusion;
     line-height: normal;
+    position: relative;
 
     @include respond(phone) {
       width: 1.8rem;
     }
+  }
+
+  &__basket-count {
+    position: absolute;
+    background-color: $color-secondary;
+    color: $color-primary;
+    top: 75%;
+    left: 75%;
+    translate: -50% -50%;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    height: 1.8rem;
+    width: 1.8rem;
   }
 
   .lang-switcher {

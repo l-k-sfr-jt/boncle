@@ -1,0 +1,26 @@
+.tooltip {
+  position: relative;
+  line-height: 1;
+
+  &__text {
+    visibility: hidden;
+    background-color: $color-primary;
+    color: $color-secondary;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    width: max-content;
+    max-width: 20rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:hover, &:active {
+    .tooltip__text {
+      visibility: visible;
+      font-size: 1.5rem;
+    }
+  }
+}
